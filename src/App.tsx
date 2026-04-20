@@ -11,9 +11,10 @@ export default function App() {
         <div className="absolute inset-0 z-0 bg-black overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&q=80&w=2000" 
-            alt="Background" 
+            alt="Fundo mostrando açougueiro profissional preparando carne" 
             className="w-full h-full object-cover opacity-40"
             style={{ animation: 'kenBurns 20s ease-out infinite alternate' }}
+            loading="eager" decoding="async" fetchPriority="high"
           />
           {/* Premium Gradient Overlays */}
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
@@ -35,8 +36,9 @@ export default function App() {
               <div className="absolute inset-0 rounded-full border-t-2 border-[#d4af37] animate-[spin_4s_linear_infinite] opacity-70"></div>
               <img 
                 src="https://i.ibb.co/7Jfg2T4x/IMG-4648.png" 
-                alt="LF Consultoria" 
+                alt="Logomarca da LF Consultoria" 
                 className="w-full h-full object-contain relative z-10 drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]" 
+                loading="eager" decoding="async" fetchPriority="high"
               />
             </div>
 
@@ -108,32 +110,32 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
             <div className="space-y-4">
               <div className="aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden border-4 border-neutral-700 relative group">
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/lkLa_sYICpY" title="ANTES 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none">Antes</div>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/lkLa_sYICpY" title="Vídeo mostrando exposição desorganizada antes da consultoria" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+                <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none" aria-hidden="true">Antes</div>
               </div>
               <p className="text-center text-gray-400 font-medium">Exposição desorganizada e iluminação deficiente</p>
             </div>
             
             <div className="space-y-4">
               <div className="aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden border-4 border-[#d4af37] relative">
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/mVmPZjHSNNE" title="DEPOIS 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none">Depois</div>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/mVmPZjHSNNE" title="Vídeo mostrando cortes organizados e atraentes depois da consultoria" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+                <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none" aria-hidden="true">Depois</div>
               </div>
               <p className="text-center text-[#d4af37] font-bold">Vitrines limpas, cortes organizados e atraentes</p>
             </div>
 
             <div className="space-y-4">
               <div className="aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden border-4 border-neutral-700 relative group">
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/wTBcIhaacoY" title="ANTES 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none">Antes</div>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/wTBcIhaacoY" title="Vídeo mostrando falta de padrão antes da consultoria" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+                <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none" aria-hidden="true">Antes</div>
               </div>
               <p className="text-center text-gray-400 font-medium">Aparência de "velho" e falta de padrão</p>
             </div>
             
             <div className="space-y-4">
               <div className="aspect-[9/16] bg-neutral-800 rounded-xl overflow-hidden border-4 border-[#d4af37] relative">
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/zYFeRgmQ5lo" title="DEPOIS 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none">Depois</div>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/zYFeRgmQ5lo" title="Vídeo mostrando padrão profissional de exposição depois da consultoria" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+                <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none" aria-hidden="true">Depois</div>
               </div>
               <p className="text-center text-[#d4af37] font-bold">Padrão profissional de exposição e apresentação</p>
             </div>
@@ -147,12 +149,12 @@ export default function App() {
               <h3 className="text-xl sm:text-2xl md:text-4xl font-black text-center mb-6 sm:mb-8 uppercase tracking-widest">Câmara Fria</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="aspect-[9/16] bg-neutral-800 rounded-lg overflow-hidden relative group border-4 border-neutral-700">
-                  <iframe className="w-full h-full" src="https://www.youtube.com/embed/kS3cC5m1Vtg" title="ANTES CÂMARA FRIA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                  <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none">Antes</div>
+                  <iframe className="w-full h-full" src="https://www.youtube.com/embed/kS3cC5m1Vtg" title="Vídeo da câmara fria antes da organização" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+                  <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none" aria-hidden="true">Antes</div>
                 </div>
                 <div className="aspect-[9/16] bg-neutral-800 rounded-lg overflow-hidden relative border-4 border-[#d4af37]">
-                  <iframe className="w-full h-full" src="https://www.youtube.com/embed/yBSP1AO6s74" title="DEPOIS CÂMARA FRIA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                  <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none">Depois</div>
+                  <iframe className="w-full h-full" src="https://www.youtube.com/embed/yBSP1AO6s74" title="Vídeo da câmara fria organizada depois da consultoria" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
+                  <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1 uppercase rounded pointer-events-none" aria-hidden="true">Depois</div>
                 </div>
               </div>
             </div>
@@ -161,12 +163,12 @@ export default function App() {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-4xl font-black text-center mb-6 sm:mb-8 uppercase tracking-widest">Cortes Especiais</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <img src="https://i.ibb.co/KC3dZf0/IMG-7834-JPG.jpg" alt="Corte Especial 1" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
-                <img src="https://i.ibb.co/tTLQsHVh/IMG-7835-JPG.jpg" alt="Corte Especial 2" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
-                <img src="https://i.ibb.co/hFYzt05h/IMG-7836-JPG.jpg" alt="Corte Especial 3" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
-                <img src="https://i.ibb.co/bMNxNbBg/IMG-7837-JPG.jpg" alt="Corte Especial 4" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
-                <img src="https://i.ibb.co/mV5hm6xF/IMG-7838-JPG.jpg" alt="Corte Especial 5" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
-                <img src="https://i.ibb.co/23RMrjX7/IMG-7839-JPG.jpg" alt="Corte Especial 6" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
+                <img src="https://i.ibb.co/KC3dZf0/IMG-7834-JPG.jpg" alt="Corte Especial 1" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
+                <img src="https://i.ibb.co/tTLQsHVh/IMG-7835-JPG.jpg" alt="Corte Especial 2" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
+                <img src="https://i.ibb.co/hFYzt05h/IMG-7836-JPG.jpg" alt="Corte Especial 3" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
+                <img src="https://i.ibb.co/bMNxNbBg/IMG-7837-JPG.jpg" alt="Corte Especial 4" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
+                <img src="https://i.ibb.co/mV5hm6xF/IMG-7838-JPG.jpg" alt="Corte Especial 5" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
+                <img src="https://i.ibb.co/23RMrjX7/IMG-7839-JPG.jpg" alt="Corte Especial 6" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
               </div>
             </div>
 
@@ -174,8 +176,8 @@ export default function App() {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-4xl font-black text-center mb-6 sm:mb-8 uppercase tracking-widest">Treinamento de Produtos Artesanais</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <img src="https://i.ibb.co/mCG0pVpY/12-1.jpg" alt="Produto Artesanal 1" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
-                <img src="https://i.ibb.co/bM7Jd64h/12-2.jpg" alt="Produto Artesanal 2" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" />
+                <img src="https://i.ibb.co/mCG0pVpY/12-1.jpg" alt="Produto Artesanal acompanhamento do treinamento 1" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
+                <img src="https://i.ibb.co/bM7Jd64h/12-2.jpg" alt="Produto Artesanal acompanhamento do treinamento 2" className="w-full aspect-square object-cover rounded-lg border-2 border-neutral-800 hover:border-[#d4af37] transition-colors" loading="lazy" decoding="async" />
               </div>
             </div>
 
@@ -320,8 +322,9 @@ export default function App() {
             <div className="col-span-1 md:col-span-1 flex items-center justify-center md:justify-start">
               <img 
                 src="https://i.ibb.co/7Jfg2T4x/IMG-4648.png" 
-                alt="LF Consultoria" 
+                alt="Logomarca da LF Consultoria no rodapé" 
                 className="w-24 h-auto object-contain drop-shadow-lg" 
+                loading="lazy" decoding="async"
               />
             </div>
             
