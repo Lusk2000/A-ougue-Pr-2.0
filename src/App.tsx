@@ -13,7 +13,7 @@ export default function App() {
             src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&q=80&w=2000" 
             alt="Fundo mostrando açougueiro profissional preparando carne" 
             className="w-full h-full object-cover opacity-40"
-            style={{ animation: 'kenBurns 20s ease-out infinite alternate' }}
+            style={{ animation: 'kenBurns 20s ease-out infinite alternate', willChange: 'transform', transform: 'translateZ(0)' }}
             loading="eager" decoding="async" fetchPriority="high"
           />
           {/* Premium Gradient Overlays */}
@@ -24,16 +24,16 @@ export default function App() {
 
         <style>{`
           @keyframes kenBurns {
-            0% { transform: scale(1) translate(0, 0); }
-            100% { transform: scale(1.08) translate(-1%, -1%); }
+            0% { transform: scale(1) translateZ(0); }
+            100% { transform: scale(1.08) translate(-1%, -1%) translateZ(0); }
           }
         `}</style>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col items-center lg:items-start max-w-3xl">
+          <div className="flex flex-col items-center max-w-4xl mx-auto text-center">
             {/* Logo */}
             <div className="w-32 h-32 lg:w-40 lg:h-40 mb-8 relative group">
-              <div className="absolute inset-0 rounded-full border-t-2 border-[#d4af37] animate-[spin_4s_linear_infinite] opacity-70"></div>
+              <div className="absolute inset-0 rounded-full border-t-2 border-[#d4af37] animate-[spin_4s_linear_infinite] opacity-70" style={{ willChange: 'transform' }}></div>
               <img 
                 src="https://i.ibb.co/7Jfg2T4x/IMG-4648.png" 
                 alt="Logomarca da LF Consultoria" 
@@ -42,15 +42,15 @@ export default function App() {
               />
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 text-center lg:text-left drop-shadow-2xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 drop-shadow-2xl">
               TRANSFORME SEU AÇOUGUE EM UM NEGÓCIO <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] via-[#fceabb] to-[#d4af37] animate-pulse">PROFISSIONAL E IRRESISTÍVEL</span>
             </h1>
             
-            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-10 text-center lg:text-left max-w-2xl font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-10 max-w-2xl font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               Pare de perder dinheiro com desorganização e falta de padrão no seu açougue.
             </p>
 
-            <a href="https://wa.link/8xjwzs" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto bg-gradient-to-r from-[#d4af37] via-[#e5c048] to-[#b5952f] hover:from-[#e5c048] hover:via-[#fceabb] hover:to-[#c6a640] text-black font-black py-4 sm:py-5 px-6 sm:px-10 rounded-lg text-base sm:text-lg md:text-xl transition-all transform hover:-translate-y-1 hover:scale-105 shadow-[0_10px_40px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2 sm:gap-3 group text-center">
+            <a href="https://wa.me/5535997518172?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria%20para%20transformar%20meu%20a%C3%A7ougue." target="_blank" rel="noopener noreferrer" className="w-full md:w-auto bg-gradient-to-r from-[#d4af37] via-[#e5c048] to-[#b5952f] hover:from-[#e5c048] hover:via-[#fceabb] hover:to-[#c6a640] text-black font-black py-4 sm:py-5 px-6 sm:px-10 rounded-lg text-base sm:text-lg md:text-xl transition-all transform hover:-translate-y-1 hover:scale-105 shadow-[0_10px_40px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2 sm:gap-3 group">
               QUERO TRANSFORMAR MEU AÇOUGUE
               <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform shrink-0" />
             </a>
@@ -272,7 +272,7 @@ export default function App() {
             </ul>
 
             <div className="text-center">
-              <a href="https://wa.link/8xjwzs" target="_blank" rel="noopener noreferrer" className="inline-block w-full md:w-auto bg-gradient-to-r from-[#d4af37] to-[#b5952f] hover:from-[#e5c048] hover:to-[#c6a640] text-black font-black py-4 sm:py-5 px-6 sm:px-12 rounded-lg text-lg sm:text-xl transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.4)]">
+              <a href="https://wa.me/5535997518172?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20consultoria%20premium%20para%20o%20meu%20a%C3%A7ougue." target="_blank" rel="noopener noreferrer" className="inline-block w-full md:w-auto bg-gradient-to-r from-[#d4af37] to-[#b5952f] hover:from-[#e5c048] hover:to-[#c6a640] text-black font-black py-4 sm:py-5 px-6 sm:px-12 rounded-lg text-lg sm:text-xl transition-all transform hover:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.4)]">
                 AGENDAR MINHA CONSULTORIA
               </a>
             </div>
@@ -286,7 +286,7 @@ export default function App() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase mb-2">Vagas limitadas para o curso presencial</h2>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-red-700 mb-6 sm:mb-8 animate-pulse">Últimas 7 vagas</p>
           
-          <a href="https://wa.link/8xjwzs" target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto bg-black text-white font-black py-4 px-6 sm:px-10 rounded-lg text-lg sm:text-xl hover:bg-neutral-800 transition-colors items-center justify-center gap-2 mx-auto">
+          <a href="https://wa.me/5535997518172?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20no%20curso%20presencial%20da%20LF%20Consultoria!" target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto bg-black text-white font-black py-4 px-6 sm:px-10 rounded-lg text-lg sm:text-xl hover:bg-neutral-800 transition-colors items-center justify-center gap-2 mx-auto">
             QUERO GARANTIR MINHA VAGA NO CURSO PRESENCIAL
             <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6" />
           </a>
@@ -307,7 +307,7 @@ export default function App() {
               </div>
             </a>
             
-            <a href="https://wa.link/8xjwzs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-gradient-to-r from-green-500 to-emerald-700 p-1 rounded-xl hover:scale-105 transition-transform">
+            <a href="https://wa.me/5535997518172?text=Ol%C3%A1!%20Estou%20vindo%20do%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-gradient-to-r from-green-500 to-emerald-700 p-1 rounded-xl hover:scale-105 transition-transform">
               <div className="bg-black/20 backdrop-blur-sm px-6 py-4 rounded-lg flex items-center gap-4 w-full">
                 <MessageCircle className="w-8 h-8 text-white" />
                 <div className="text-left">
